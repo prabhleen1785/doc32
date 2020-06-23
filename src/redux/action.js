@@ -13,7 +13,7 @@ export const fetchChartData = city => {
   return dispatch => {
     axios
       .get(
-        `http://api.openweathermap.org/data/2.5/forecast/?q=${city}&APPID=2a6724dd0c56d73cd0dc8ded36e53215`
+        `https://api.openweathermap.org/data/2.5/forecast/?q=${city}&APPID=2a6724dd0c56d73cd0dc8ded36e53215`
       )
       .then(response => {
         const data = response.data;
